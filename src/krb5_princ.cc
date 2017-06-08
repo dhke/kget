@@ -17,7 +17,7 @@ Krb5Principal::Krb5Principal(const Krb5Context &ctx, const char *name)
 }
 
 Krb5Principal::Krb5Principal(const Krb5Principal &princ)
-	: Krb5Principal(this->context(), princ)
+	: Krb5Principal(princ.context(), princ)
 {
 }
 
